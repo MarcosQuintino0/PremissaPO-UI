@@ -64,3 +64,62 @@ body {
 .container__caixa {
   margin: 0 6em;
 }
+
+.secundario__imagem {
+  width: 80%;
+}
+.terceiro__imagem {
+  width: 10%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco-principal);
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco-principal);
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__descricao {
+  padding: 2em;
+}
+
+.terceiro__imagem {
+  width: 80%;
+  align-items: center;
+}
+
+.container2 {
+  height: 100vh;
+  display: flex; /* Use Flexbox para o layout */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.container__descricao2 {
+  padding: 2em;
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.secundario__imagem2 {
+  width: 80%;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
