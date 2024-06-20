@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -80,5 +85,53 @@
     <section class="carrossel">
       <h2 class="carrossel__titulo">Novos lançamentos</h2>
     </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Novos lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/ApacheKafka.png" alt="" />
+          </div>
+          <div class="swiper-slide"><img src="img/Portugol.png" alt="" /></div>
+          <div class="swiper-slide">
+            <img src="img/Arquitetura.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Liderança.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Javascript.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Gestão.png" alt="" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+      });
+    </script>
   </body>
 </html>
